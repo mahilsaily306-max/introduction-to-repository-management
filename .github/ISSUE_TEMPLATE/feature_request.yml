@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest a feature for this project
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - mahilsaily306-max
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Information
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: What is the feature you would like to see?
+      description: |
+        Explain the feature you would like to add. Try to be as clear as possible.
+        If you have a particular use case in mind, tell us about it.
+      placeholder: A new feature
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2
+        - 1.0.1
+        - 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional information
+      description: |
+        Got more to add? Here's a great place to put screenshots or
+        further explanation of the feature you would like to see.
+    validations:
+      required: false
